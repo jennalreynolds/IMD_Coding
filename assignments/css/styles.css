@@ -3,6 +3,7 @@
 
 body {
     background-color: #fff;
+    margin: 0px 10%;
     font-family: "Sigmar", sans-serif;
 }
 
@@ -16,25 +17,38 @@ header {
     background-color: dodgerblue;
     color: #fff;
     padding: 30px 40px;
+    font-size: 58px;
 }
 
 h1 {
     text-transform: uppercase;
     font-size: 48px;
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 30px;
 }
 
 h2 {
     font-size: 36px;
+    color: #d1633c;
+    font-size: 1em;
 }
 
 h3 {
     font-size:24px;
 }
+.circle {
+    border-radius: 50%;
+    border:5px solid #d1633c
+}
 
 aside img {
     width: 180px;
     aspect-ratio: 1/1;
-    object-fit cover;
+    object-fit: cover;
     border-radius: 999px;
     border: 6px solid dodgerblue;
 }
