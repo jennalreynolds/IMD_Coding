@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
 <body>
@@ -17,18 +18,23 @@
             <h1>Interactive Media Design</h1>
         </header>
 
-        <nav>
-            <ul>  
+        <nav id="nav-menu">
+            <ul id="nav-menu-list" class="menu-items">
+                <li class="active"><a href='index.html">About</a></li>  
                 <li><a href="index.html">About</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="Work.html">Work</a></li>
             </ul>
+            <button id="toggle-button" type="button">Menu</button>
         </nav>
 
         <section class="col-span-8">
             <h2>Jenna Reynolds</h2>
             <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae impedit labore voluptatibus quis doloremque fugit, voluptatum consectetur! Omnis reprehenderit alias ipsam veniam deleniti magnam quam. Cum quasi eum totam. Iste.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consectetur quasi. Omnis sint nulla saepe, cumque quae, laboriosam eos praesentium eius accusantium itaque in facere eum, molestias totam? Deserunt, temporibus!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae impedit, iusto delectus vero, dolore adipisci mollitia minus ut placeat facilis veritatis illum est explicabo debitis ad dolores tempore doloribus odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae modi consectetur natus in ut tenetur provident fuga, sit maiores quisquam quibusdam, sequi sint nesciunt soluta distinctio debitis fugiat animi sunt.</p>
+            
 
             <h3>Classes this Semester</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis nihil eveniet fugiat optio at nesciunt veniam, molestiae et, error dolore, numquam animi neque. Nemo perferendis incidunt doloremque atque labore error.</p>
@@ -41,8 +47,8 @@
         </section>
 
         <aside class="col-span-4">
-            <img class="circle" src="images/reynoldsheadshot2.jpg" alt="Photo of Jenna Reynolds"class="circle">
-            <a href="https://wwww.linkedin.com" target="_blank" class="button">Connect on LinkedIn</a>
+            <img class="circle" src="images/reynoldsheadshot2.jpg" alt="Photo of Jenna Reynolds"</img>
+            <a class="button" href="https://wwww.linkedin.com" target="_blank">Connect on LinkedIn</a>
         </aside>
 
         <footer>
@@ -53,6 +59,8 @@
     </div>
 
 
+
+    <script src="js/script.js"></script>
     </body>
     </html>
  
