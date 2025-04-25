@@ -1,0 +1,323 @@
+@import url("https://use.typekit.net/sdb4apo.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'Franxurter';
+    src: url('../fonts/Franxurter.woff2') format('woff2'),
+        url('../fonts/Franxurter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#f8f7f4;
+    background-size: 100px;
+}
+
+h1 {
+        font-family: 'Franxurter';
+        text-transform: uppercase;
+        font-family: 'Franxurter', sans-serif; /* Match your @font-face declaration */
+        font-size: clamp(48px, 4vw, 100px);
+        font-weight: bold;
+        color: #e358b6; /* Pink color */
+        text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+        letter-spacing: 2px;
+    }
+    
+    .orange-text {
+        color: #f5a95a; 
+    }
+    .pink-text {
+        color: #e358b6; 
+    }
+    
+    /* For the "Get Tickets" button */
+    .ticket-button {
+        background-color: #f5a95a;
+        color: white;
+        font-family: 'Franxurter', sans-serif;
+        font-size: clamp(24px, 2vw, 32px);
+        padding: 10px 30px;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+    }
+    .promo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    @media (min-width: 768px) {
+        .promo-container {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 40px;
+        }
+        
+        .promo-image {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        
+        .promo-content {
+            flex: 0 0 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+    }
+    .promo-image img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+.golf-club-image {
+    width: 225px; 
+    height: auto;
+    position: absolute;
+    right: 75px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.promo-content {
+    position: relative;
+}
+h2 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    text-align: right;
+    background-color:#d9f8ff;
+    color: #fff;
+    padding:30px 40px;
+}
+
+footer {
+    text-align:center;
+    padding: 0 0 20px;
+    color: #e358b6;
+}
+
+
+h2 {
+    font-size: 36px;
+    font: futura;
+}
+h3 {
+    font-size: 24px;
+    font: open sans; 
+}
+
+aside {
+        text-align: center;
+        padding-top: 20px;
+}
+
+img {
+    width:100%
+}
+
+
+#nav-menu {
+    background-color: #F2ac66;
+    padding: 10px 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+#nav-menu ul {
+    display: none; /* hide on mobile by default */
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu ul.active {
+ display: flex;
+ flex-direction:column;
+}
+
+#nav-menu ul li {
+ margin: 0;
+ padding: 0;
+}
+
+#nav-menu li a {
+    display: inline-block;
+    color: #f8f7f4;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 99px;
+    transition: all 0.2s eases;
+    min-width: 150px;
+    text-align: center;
+}
+
+#nav-menu li.active a,
+#nav-menu li a:hover {
+    background-color: #F2ac66;
+}
+
+#toggle-button {
+    margin-left: auto;
+    background-color: #F2ac66;
+    color: #f8f7f4;
+    border: none;
+    border-radius: 14px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    font-weight:bold;
+    letter-spacing: 0.125px
+
+
+}
+
+#toggle-button:hover,
+#toggle-button:focus {
+    background-color: #F2ac66;
+}
+
+#toggle-button:focus {
+    background-color: #f2ac66;
+}
+#nav-menu ul.active + #toggle-button {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+
+
+
+.container {
+    display: grid;
+    column-gap: 1.5em;
+    grid-template-columns: repeat(12,1fr);
+    width: min(95%, 75em);
+    margin: 0 auto;
+
+    background-color: #f8f7f4;
+    box-shadow: 0 0 36px -12px rgba(25, 88, 151, 0.35);
+
+}
+
+.container > * {
+    grid-column: span 12;
+    padding-inline: 20px;
+}
+
+
+a.button {
+    display: block;
+    min-width: 200px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #F2ac66;
+    color: #f8f7f4;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+
+    transition: all 0.6s cubic-bezier(.24,.96,.57,1.17);
+
+}
+
+a.button:hover {
+    transform: translateY(-2px);
+    background-color: lavender;
+    box-shadow: 0px 10px 28px -10px rgba(0,0,0,0.56);
+}
+
+a.button:active {
+    background-color: purple;
+}
+
+a.button:visited {
+
+}
+
+
+
+.card {
+    background-color: #fff;
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 24px -8px rgba(0,0,0,0.5);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.card-text {
+    padding: 0 2rem;
+}
+
+/* Desktop Styles */
+@media (min-width: 40em) {
+    #nav-menu ul {
+        display: flex;
+        flex-direction: row;
+      }
+
+    #toggle-button {
+        display: none;
+    }
+    a.button {
+        display: inline-block;
+    }
+    .col-span-8 {
+        grid-column: span 8;
+    }
+    .col-span-4 {
+        grid-column: span 4;
+    }
+
+    .work-section {
+        display: flex;
+        justify-content: center;
+
+        flex-flow: row wrap;
+    }
+
+    .card {
+        flex: 0 1 324px;
+    }
+}
+
+/* Mobile styles */
+
+@media (max-width: 40em) {
+    #nav-menu ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+   

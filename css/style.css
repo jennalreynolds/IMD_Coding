@@ -1,0 +1,114 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Playfair Display', serif;
+    color: #111;
+    background: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .zara-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .nav-left a, .nav-right a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('../img/hero.jpg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-text {
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+  
+  /* New Arrivals Section */
+  .new-arrivals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 5%;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .new-arrivals .text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .new-arrivals .text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .new-arrivals .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+    font-size: 0.9rem;
+    color: #555;
+  }
