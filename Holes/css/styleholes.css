@@ -22,12 +22,13 @@ body {
 h1 {
         font-family: 'Franxurter';
         text-transform: uppercase;
-        font-family: 'Franxurter', sans-serif; /* Match your @font-face declaration */
+        font-family: 'Franxurter', sans-serif; 
         font-size: clamp(48px, 4vw, 100px);
         font-weight: bold;
         color: #e358b6; /* Pink color */
-        text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+        text-shadow: 4px 4px 0 #e5e5e5, 0 0 20px #fff;
         letter-spacing: 2px;
+        text-align: center;
     }
     
     .orange-text {
@@ -97,6 +98,24 @@ h1 {
 .promo-content {
     position: relative;
 }
+
+/* Golfclub */
+
+.promo-content h1 {
+    background-image: url('../images/HolesClub.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-block: 0;
+    padding-block: 30px;
+    background-position: 80% center;
+}
+
+@media (max-width: 1050px) {
+    .promo-content h1 {
+        background-position: right center;
+    }
+}
+
 h2 {
     font-family: "futura-pt", sans-serif;
     font-weight: 400;
@@ -107,9 +126,18 @@ header {
     text-align: right;
     background-color:#d9f8ff;
     color: #fff;
-    padding:30px 40px;
-}
+    padding:0 20px;
+    height: 225px;
+    display:flex;
+    align-items:center;
 
+}
+.headerlogo {
+    height: 225px; /* Adjust this value to control the size */
+    width: auto;  
+    display: block;
+    margin: 0 auto; 
+  }
 footer {
     text-align:center;
     padding: 0 0 20px;
@@ -275,6 +303,7 @@ a.button:visited {
     overflow: hidden;
 }
 
+
 .card-text {
     padding: 0 2rem;
 }
@@ -319,5 +348,189 @@ a.button:visited {
         flex-direction: column;
     }
 }
+.about-page .promo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-page .promo-content {
+    order: 1;
+    flex: 1;
+  }
+  
+  .about-page .promo-image {
+    order: 2;
+    flex: 1;
+  }
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
 
-   
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #d9f8ff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-description {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.menu-description h3 {
+    margin: 0 0 0.5rem;
+    color: #e358b6;
+}
+
+.menu-description p {
+    margin: 0;
+    font-size: 0.9rem;
+    color:#e358b6
+}
+
+@media (min-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.ticket-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #d9f8ff;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    min-height: 100px;
+    width: 100%
+}
+
+.ticket-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ticket-description {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.ticket-description h3 {
+    margin: 0 0 0.5rem;
+    color: #e358b6;
+}
+
+.ticket-description p {
+    margin: 0;
+    font-size: 0.9rem;
+    color:#e358b6
+}
+
+@media (min-width: 1024px) {
+    .ticket-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.ticket-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 400px; 
+}
+
+.ticket-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 400px;
+}
+.ticket-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.promo-image {
+    flex: 1;
+}
+
+.ticket-grid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .ticket-wrapper {
+        flex-direction: column;
+    }
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.form-container iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 800px;
+    border: none;
+}
